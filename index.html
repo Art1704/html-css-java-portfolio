@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Portfolio</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Portfolio</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>    
+                <span></span>    
+                <span></span>    
+            </div>
+
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>       
+        </div>              
+    </nav>
+    
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./Assets/17PROFILE.png" alt="Art John Profile picture">
+        </div>
+
+        <div class="section_text">
+            <p class="section_text_p">Hello I'm</p>
+            <h1 class="title">Art Aquino</h1>
+            <p class="section_text_p2">Future Network Engineer</p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Assets/Resume(CV)-Aquino,Art-2026.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
+            </div>
+
+            <div id="socials-container">
+                <img src="./Assets/LinkedIn_.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/art-aquino17/'">
+                <img src="./Assets/GitHub_.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/Art1704'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section_text_p1">Get to Know More!</p>
+        <h1 class="title">About Me</h1>
+
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./Assets/AbourProfile.jpg" alt="Profile picture" class="about-pic"> 
+            </div>
+
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./Assets/Experience_.png" alt="Experience icon" class="icon">
+                        <h3>Job Experience</h3>
+                        <p>System Administration</p>
+                    </div>    
+                    <div class="details-container">
+                        <img src="./Assets/Education_.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.S in Information Technology</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p> 
+                        I am an aspiring IT professional with a strong interest in expanding my knowledge and skills in computer networking. I enjoy learning about network infrastructure, troubleshooting, and how different systems communicate. My dream is to become a Network Engineer, where I can apply my technical skills, continue learning, and contribute to building reliable and secure networks.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./Assets/Arrow.png" alt="Arrow icon" class="icon Arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section_text_p1">Explore my</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">System Administration</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./Assets/Checklist_.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Server Management</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/Checklist_.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>System Updates</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/Checklist_.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>User Support</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/Checklist_.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Security & Backups</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/Checklist_.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Troubleshooting</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programming Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./Assets/Checklist_.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/Checklist_.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/Checklist_.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/Checklist_.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/Checklist_.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>C#</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="./Assets/Arrow.png" alt="Arrow icon" class="icon Arrow" onclick="location.href='./#certifications'">
+    </section>
+
+    <section id="certifications">
+        <p class="section_text_p1">Check my</p>
+        <h1 class="title">Certifications</h1>
+        <div class="experience-details-container">
+            <div class="about-containers single-cert-container">
+                <div class="details-container cert-card">
+                    <div class="cert-img-container">
+                        <img src="./Assets/Certificate1.jpg" alt="Certificate photo" class="cert-img">
+                    </div>
+                    <h2 class="experience-sub-title cert-title">Tech-Ready! Microsoft Office Workshop</h2>
+                    <p class="cert-date">Issued 2025</p>
+                </div>
+            </div>
+        </div>
+        <img src="./Assets/Arrow.png" alt="Arrow icon" class="icon Arrow" onclick="location.href='./#contact'">
+    </section>
+
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <!-- Connected Access Key -->
+                <input type="hidden" name="access_key" value="9aba6463-39ce-48b4-ba5e-9db969b83ca5">
+
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required class="form-input"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-color-1 send-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- GEMINI CHATBOT WIDGET -->
+<div id="chat-widget">
+    <button id="chat-toggle-btn" onclick="toggleChat()">💬</button>
+    
+    <div id="chat-container" class="chat-hidden">
+        <div class="chat-header">
+            <h3>AI Assistant</h3>
+            <button onclick="toggleChat()">✕</button>
+        </div>
+        <div id="chat-box"></div>
+        <div class="chat-input-area">
+            <input type="text" id="user-input" 
+            placeholder="Ask me anything..." 
+            onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+    <footer>
+    <blockquote class="footer-quote">
+        "When the time is right, I the Lord, will make it happen."
+        <span>Isaiah 60:22</span>
+    </blockquote>
+
+    <p class="copyright">Copyright &#169; 2026 Art Aquino. All Rights Reserved.</p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
