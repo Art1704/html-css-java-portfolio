@@ -61,3 +61,16 @@ function appendMessage(text, className) {
     chatBox.scrollTop = chatBox.scrollHeight;
     return msgElement;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const chatContainer = document.getElementById("chat-container");
+    const chatBox = document.getElementById("chat-box");
+
+    if (chatBox && chatBox.children.length === 0) {
+        appendMessage("Hello! I am Jarvis, Art's AI assistant. How can I help you explore his portfolio today?", "bot-message");
+    }
+
+    if (chatContainer) {
+        chatContainer.classList.remove("chat-hidden");
+    }
+});
