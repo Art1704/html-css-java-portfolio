@@ -62,15 +62,12 @@ function appendMessage(text, className) {
     return msgElement;
 }
 
+/* Pre-load Jarvis welcome message without auto-opening the chat */
 document.addEventListener("DOMContentLoaded", () => {
-    const chatContainer = document.getElementById("chat-container");
     const chatBox = document.getElementById("chat-box");
 
+    // Add Jarvis welcome message so it's ready when opened
     if (chatBox && chatBox.children.length === 0) {
         appendMessage("Hello! I am Jarvis, Art's AI assistant. How can I help you explore his portfolio today?", "bot-message");
-    }
-
-    if (chatContainer) {
-        chatContainer.classList.remove("chat-hidden");
     }
 });
